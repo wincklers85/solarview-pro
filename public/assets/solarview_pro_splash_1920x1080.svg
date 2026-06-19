@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06111F"/><stop offset=".55" stop-color="#0B2239"/><stop offset="1" stop-color="#06342D"/></linearGradient>
+<radialGradient id="sun" cx="78%" cy="20%" r="45%"><stop stop-color="#FBBF24" stop-opacity=".5"/><stop offset=".4" stop-color="#22D3EE" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+</defs><rect width="1920" height="1080" fill="url(#bg)"/><rect width="1920" height="1080" fill="url(#sun)"/>
+<g opacity=".14" stroke="#22D3EE" stroke-width="2">
+  <path d="M0 840 C250 740 420 930 640 790 S1050 650 1290 780 S1620 930 1920 760" fill="none"/>
+  <path d="M80 180 H1840 M80 300 H1840 M80 420 H1840 M80 540 H1840 M80 660 H1840 M80 780 H1840"/>
+  <path d="M220 120 V900 M460 120 V900 M700 120 V900 M940 120 V900 M1180 120 V900 M1420 120 V900 M1660 120 V900"/>
+</g>
+
+    <g transform="translate(960,420) scale(2.35)">
+      <defs>
+        <linearGradient id="orb" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#22D3EE"/><stop offset=".55" stop-color="#0EA5E9"/><stop offset="1" stop-color="#10B981"/></linearGradient>
+        <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <path d="M0,-78 L68,-39 L68,39 L0,78 L-68,39 L-68,-39 Z" fill="url(#orb)" opacity=".22" stroke="#22D3EE" stroke-width="4" filter="url(#glow)"/>
+      <circle r="56" fill="#071826" opacity=".86" stroke="#0EA5E9" stroke-width="3"/>
+      <g transform="translate(-36,-24)">
+        <rect x="0" y="0" width="72" height="42" rx="5" fill="none" stroke="#22D3EE" stroke-width="4"/>
+        <path d="M24 0v42M48 0v42M0 14h72M0 28h72" stroke="#22D3EE" stroke-width="2" opacity=".8"/>
+        <path d="M15 48 C32 60 48 60 65 48" stroke="#10B981" stroke-width="5" fill="none" stroke-linecap="round"/>
+      </g>
+      <path d="M9 -63 L-12 -8 H12 L-7 57 L35 -22 H10 Z" fill="#FBBF24" stroke="#F8FAFC" stroke-width="2" filter="url(#glow)"/>
+      <circle cx="-54" cy="0" r="6" fill="#A3E635"/><circle cx="54" cy="0" r="6" fill="#A3E635"/><circle cx="0" cy="-54" r="6" fill="#A3E635"/>
+      <path d="M-48 0H-28M28 0H48M0 -48V-30" stroke="#A3E635" stroke-width="3" stroke-linecap="round" opacity=".9"/>
+    </g>
+<text x="960" y="690" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="850" fill="#F8FAFC" letter-spacing="-3">SolarView <tspan fill="#22D3EE">Pro</tspan></text>
+<text x="960" y="755" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" fill="#A3E635" letter-spacing="6">SOLAR • BATTERY • GRID • THERMOSYSTEM</text>
+<rect x="660" y="838" width="600" height="10" rx="5" fill="#123047"/><rect x="660" y="838" width="390" height="10" rx="5" fill="#22D3EE"/><rect x="660" y="838" width="210" height="10" rx="5" fill="#A3E635"/>
+<text x="960" y="900" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#94A3B8">Powered by TermoSystem Energy Flow</text>
+</svg>
