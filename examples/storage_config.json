@@ -1,0 +1,46 @@
+{
+  "schema": "solarview.storage.config.v1",
+  "site_id": "molini-casa",
+  "history_enabled": true,
+  "history_interval_seconds": 300,
+  "storage_strategy": {
+    "latest": {
+      "enabled": true,
+      "description": "Ultimo dato ricevuto, usato per la dashboard live.",
+      "files": {
+        "termosystem": "data/latest/termosystem_latest.json",
+        "technosolar": "data/latest/technosolar_latest.json"
+      }
+    },
+    "raw_history": {
+      "enabled": true,
+      "description": "Ogni lettura viene salvata senza sovrascrivere le precedenti.",
+      "folder_pattern": "data/history/raw/{source}/{yyyy}/{mm}/{dd}/",
+      "filename_pattern": "{HH}-{MM}-{SS}.json"
+    },
+    "daily_rollup": {
+      "enabled": true,
+      "description": "Riassunto giornaliero per grafici veloci.",
+      "folder": "data/history/rollups/daily/",
+      "filename_pattern": "{source}_{yyyy}-{mm}-{dd}.json"
+    },
+    "monthly_rollup": {
+      "enabled": true,
+      "description": "Riassunto mensile per grafici lunghi.",
+      "folder": "data/history/rollups/monthly/",
+      "filename_pattern": "{source}_{yyyy}-{mm}.json"
+    },
+    "yearly_rollup": {
+      "enabled": true,
+      "description": "Riassunto annuale.",
+      "folder": "data/history/rollups/yearly/",
+      "filename_pattern": "{source}_{yyyy}.json"
+    }
+  },
+  "retention": {
+    "raw_5min_data_days": 730,
+    "daily_rollups_years": 10,
+    "monthly_rollups_years": 20,
+    "yearly_rollups": "keep_forever"
+  }
+}

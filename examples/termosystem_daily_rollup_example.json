@@ -1,0 +1,26 @@
+{
+  "schema": "solarview.rollup.daily.v1",
+  "source": "termosystem",
+  "site_id": "molini-casa",
+  "date": "2026-06-19",
+  "samples_expected": 288,
+  "samples_received": 286,
+  "puffers": {
+    "system_temperature_min_c": 38.7,
+    "system_temperature_max_c": 68.3,
+    "average_temperature_min_c": 44.1,
+    "average_temperature_max_c": 61.8
+  },
+  "pellet_boiler": {
+    "active_minutes": 310,
+    "pump_return_active_minutes": 290,
+    "hopper_pellet_start_percent": 82,
+    "hopper_pellet_end_percent": 61,
+    "hopper_pellet_used_percent": 21,
+    "boiler_room_temperature_max_c": 36.2
+  },
+  "heat_pump": {
+    "active_minutes": 0,
+    "estimated_energy_kwh": 0.0
+  }
+}

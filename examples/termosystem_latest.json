@@ -1,0 +1,53 @@
+{
+  "schema": "solarview.termosystem.v1",
+  "generated_at": "2026-06-19T17:00:00+02:00",
+  "interval_seconds": 300,
+  "device": {
+    "device_id": "ESP32-TERMOSYSTEM-001",
+    "device_name": "TermoSystem Locale Caldaia",
+    "source": "termosystem",
+    "site_id": "molini-casa",
+    "firmware": "0.1.0-dev",
+    "wifi_rssi_dbm": -61,
+    "uptime_seconds": 43200,
+    "esp32_voltage_v": 5.08
+  },
+  "puffers": [
+    {
+      "puffer_id": "PUFFER-1",
+      "name": "Puffer 1",
+      "temperature_min_c": 43.2,
+      "temperature_max_c": 62.8
+    },
+    {
+      "puffer_id": "PUFFER-2",
+      "name": "Puffer 2",
+      "temperature_min_c": 41.9,
+      "temperature_max_c": 60.4
+    }
+  ],
+  "puffer_summary": {
+    "system_temperature_min_c": 41.9,
+    "system_temperature_max_c": 62.8,
+    "average_min_c": 42.55,
+    "average_max_c": 61.6
+  },
+  "heating_sources": {
+    "pellet_boiler": {
+      "active": true,
+      "pump_return_active": true,
+      "hopper_pellet_percent": 68,
+      "boiler_room_temperature_c": 31.5
+    },
+    "heat_pump": {
+      "active": false,
+      "parallel_puffer_charge_enabled": true,
+      "estimated_power_kw": 0.0
+    }
+  },
+  "system_state": {
+    "mode": "pellet_only",
+    "combined_optimization_active": false
+  },
+  "alerts": []
+}

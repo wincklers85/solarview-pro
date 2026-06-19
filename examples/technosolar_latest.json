@@ -1,0 +1,50 @@
+{
+  "schema": "solarview.technosolar.v1",
+  "generated_at": "2026-06-19T17:00:00+02:00",
+  "interval_seconds": 300,
+  "device": {
+    "device_id": "ESP32-TECHNOSOLAR-001",
+    "device_name": "TechnoSolar Inverter",
+    "source": "technosolar",
+    "site_id": "molini-casa",
+    "firmware": "0.1.0-dev",
+    "wifi_rssi_dbm": -55,
+    "uptime_seconds": 78120
+  },
+  "solar": {
+    "voltage_v": 382.5,
+    "power_kw": 2.84,
+    "current_a": 7.42,
+    "temperature_c": 34.8
+  },
+  "grid": {
+    "voltage_v": 235.1,
+    "frequency_hz": 50.0,
+    "power_kw": 0.12
+  },
+  "home": {
+    "voltage_v": 234.8,
+    "frequency_hz": 50.0,
+    "load_power_kw": 1.96
+  },
+  "battery": {
+    "temperature_c": 27.4,
+    "voltage_v": 52.8,
+    "soc_percent": 74,
+    "charge_power_kw": 0.98,
+    "discharge_power_kw": 0.0
+  },
+  "inverter": {
+    "temperature_c": 42.3,
+    "ac_bypass_active": false
+  },
+  "flow": {
+    "solar_to_home_kw": 1.86,
+    "solar_to_battery_kw": 0.98,
+    "solar_to_grid_kw": 0.0,
+    "grid_to_home_kw": 0.1,
+    "grid_to_battery_kw": 0.02,
+    "battery_to_home_kw": 0.0
+  },
+  "alerts": []
+}
