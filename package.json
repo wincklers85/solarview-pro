@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "latest",
+    "express": "latest"
+  },
+  "devDependencies": {},
+  "version": "0.14.0-rc1",
+  "description": "SolarView Pro V0.14 RC1 energy and TermoSystem monitoring platform",
+  "name": "solarview-pro"
+}
